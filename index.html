@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+	<nav id="navbar">
+		<header>Documentación CSS</header> 
+		<ul>
+			<li><a class="nav-link" href="#Introduccion">Introducción</a></li>
+			<li><a class="nav-link" href="#Selectores">Selectores</a></li>
+			<li><a class="nav-link" href="#Colores">Colores</a></li>
+			<li><a class="nav-link" href="#Editando_texto">Editando Texto</a></li>
+			<li><a class="nav-link" href="#Unidad_de_medida">Unidades de medida</a></li>
+			<li><a class="nav-link" href="#Modelo_de_caja">Modelo de caja</a></li>
+			<li><a class="nav-link" href="#Flexbox">Flexbox</a></li>
+			<li><a class="nav-link" href="#Grid">CSS Grid</a></li>
+			<li><a class="nav-link" href="#Media_query">Medias Query</a></li>
+			<li><a class="nav-link" href="#Variables">Variables</a></li>
+			<li><a class="nav-link" href="#Pseudo_clases">Pseudoclases</a></li>
+			<li><a class="nav-link" href="#Pseudo_elementos">Pseudoelementos</a></li>
+			<li><a class="nav-link" href="#Referencia">Referencia</a></li>
+		</ul>
+	</nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduccion">
+            <header>Introducción</header>
+						<p>CSS es el acrónimo de "Cascading Style Sheets", que se traduce al español como "hojas de estilo en cascada". Se trata de un lenguaje de diseño web que se utiliza para describir cómo se presentan los elementos HTML en una página web.</p>
+						<p>En lugar de tener que definir el estilo de cada elemento HTML individualmente, CSS permite que los desarrolladores web definan estilos comunes en un solo lugar y luego los apliquen a cualquier elemento HTML en la página que deseen.</p>
+						<p>CSS se utiliza para definir una amplia variedad de estilos en una página web, como los colores, fuentes, tamaños de texto, diseños de página, animaciones y mucho más. Es una herramienta poderosa que permite a los desarrolladores web crear sitios web hermosos y bien organizados.</p>
+						<p>A medida que avances en el aprendizaje de CSS, descubrirás que hay muchas formas diferentes de utilizarlo para crear diseños web únicos y atractivos.</p>
+        </section>
+				<section class="main-section" id="Selectores">
+					<header>Selectores</header>
+					<p>Los selectores de CSS son una parte fundamental de este lenguaje de diseño web. Los selectores son utilizados para apuntar a un elemento o conjunto de elementos en una página web y aplicarles estilos específicos. En términos sencillos, los selectores son los "apuntadores" de CSS que identifican los elementos a los que se les aplicarán los estilos definidos en las reglas CSS.</p>
+					<li><u>Selector de tipo:</u> Este selector se utiliza para apuntar a elementos HTML específicos, como por ejemplo los encabezados h1, los párrafos p, las imágenes img, entre otros. Este selector se escribe con el nombre del elemento HTML precedido por un signo de selección (#).</li>
+					<li><u>Selector de clase:</u> Este selector se utiliza para apuntar a elementos que tienen una clase específica. Las clases se utilizan para agrupar elementos similares y aplicar estilos a todos ellos a la vez. Este selector se escribe con un punto (.) seguido del nombre de la clase.</li>
+					<li><u>Selector de id:</u> Este selector se utiliza para apuntar a un elemento HTML que tiene un id específico. Los id son únicos en la página web y se utilizan para identificar un elemento específico. Este selector se escribe con un signo de numeral (#) seguido del nombre del id.</li>
+					<li><u>Selector universal:</u> Este selector se utiliza para aplicar un estilo a todos los elementos de la página. Este selector se escribe con un asterisco (*) y se utiliza con precaución ya que puede afectar negativamente el rendimiento de la página.</li>
+					<li><u>Selector de atributo:</u> Este selector se utiliza para apuntar a elementos que tienen un atributo específico. Se puede utilizar para apuntar a elementos que tengan un atributo específico y un valor específico. Este selector se escribe con corchetes [ ] y dentro de los corchetes se coloca el nombre del atributo.</li>
+				</section><br>
+        <section class="main-section" id="Colores">
+            <header>Colores</header>
+						<p>Los dos modelos de colores más comúnmente utilizados en CSS son el modelo aditivo RGB y el modelo sustractivo CYMK.</p>
+							<li>El modelo aditivo RGB se basa en la mezcla de luz en lugar de pigmentos. En este modelo, los colores se crean mezclando diferentes cantidades de rojo (R), verde (G) y azul (B). Cada color puede tener una intensidad que va desde 0 (ausente) hasta 255 (máxima intensidad). Así, combinando diferentes intensidades de estos tres colores primarios, se pueden crear una amplia variedad de tonos y colores. Este modelo se utiliza principalmente en pantallas de dispositivos electrónicos como ordenadores, televisores y teléfonos móviles.</li>
+							<li>Por otro lado, el modelo sustractivo CYMK se utiliza principalmente en la industria de la impresión. En este modelo, los colores se crean mediante la sustracción de diferentes cantidades de cian (C), magenta (M), amarillo (Y) y negro (K). Al contrario del modelo aditivo RGB, en este caso se sustrae la luz, por lo que cuanto más tinta se añade, el color resultante será más oscuro. Este modelo es muy útil para lograr una alta precisión en la impresión de colores y se utiliza en impresoras y rotuladores.</li>
+        </section>
+        <section class="main-section" id="Editando_texto">
+					<header>Editando Texto</header>
+						<p>Hay muchas formas de modificar el texto en CSS para lograr diferentes efectos de estilo. A continuación, te menciono algunas de las formas más comunes:</p>
+							<li>Cambiar el color del texto: Puedes cambiar el color del texto utilizando la propiedad "color". Por ejemplo:<code> p {	color: red;	}</code></li>
+							<li>Cambiar la fuente del texto: Puedes cambiar la fuente del texto utilizando la propiedad "font-family". Por ejemplo:<code>body { font-family: Arial, sans-serif;}</code></li>
+							<li>Cambiar el tamaño del texto: Puedes cambiar el tamaño del texto utilizando la propiedad "font-size". Por ejemplo:<code>h1 {font-size: 36px; }</code></li>
+							<li>Cambiar el estilo del texto: Puedes cambiar el estilo del texto utilizando la propiedad "font-style". Por ejemplo:<code>em {font-style: italic; }</code></li>
+							<li>Alineación de texto: Puedes alinear el texto utilizando la propiedad "text-align". Por ejemplo:<code>p {text-align: center; }</code></li>
+							<li>Cambiar la decoración del texto: Puedes cambiar la decoración del texto utilizando la propiedad "text-decoration". Por ejemplo:<code>a {text-decoration: underline; }</code></li>
+							<li>Añadir sombra al texto: Puedes añadir sombra al texto utilizando la propiedad "text-shadow". Por ejemplo:<code>h1 {text-shadow: 2px 2px 4px #000000; }</code></li>
+						<p>Estos son solo algunos ejemplos de cómo puedes modificar el texto en CSS. Hay muchas otras propiedades CSS que puedes utilizar para lograr diferentes efectos de estilo en el texto, y lo mejor es que puedes combinarlas para crear estilos de texto personalizados y únicos.</p>
+        </section>
+        <section class="main-section" id="Unidad_de_medida">
+					<header>Unidades de medida</header>
+						<p>CSS ofrece una variedad de unidades de medida que se utilizan para especificar tamaños, distancias y otros valores. A continuación, te describo brevemente algunas de las unidades de medida más comunes en CSS:</p>
+							<ol>
+								<li><u>Píxeles (px):</u> La unidad más común en CSS, un píxel es la unidad de medida más pequeña que se utiliza para mostrar una imagen en una pantalla.</li>
+								<li><u>Porcentaje (%):</u> Esta unidad de medida se utiliza en relación con el tamaño del contenedor. Por ejemplo, si especificas que un elemento debe tener un ancho del 50%, significa que será la mitad del ancho de su contenedor.</li>
+								<li><u>EM:</u> Una unidad relativa basada en el tamaño de la fuente del elemento padre. Por ejemplo, si especificas que un elemento debe tener un tamaño de fuente de 1.5em, significa que será 1.5 veces el tamaño de fuente del elemento padre.</li>
+								<li><u>REM:</u> Similar a EM, REM también es una unidad relativa basada en el tamaño de la fuente del elemento raíz (normalmente el elemento HTML).</li>
+								<li><u>VH y VW:</u> Estas unidades de medida se utilizan para especificar el tamaño en relación con el tamaño de la ventana gráfica del usuario. VH se refiere a la altura de la ventana gráfica, mientras que VW se refiere a su ancho.</li>
+							</ol>
+        </section>
+        <section class="main-section" id="Modelo_de_caja">
+					<header>Modelo de caja</header>
+					<p>El modelo de caja es un concepto fundamental en CSS que se aplica a todos los elementos HTML. Cada elemento HTML se considera una "caja" que tiene una serie de propiedades que definen su tamaño, su posición y su apariencia visual.</p>
+						<ul> El modelo de caja consta de cuatro partes principales:
+							<li><u>Contenido:</u> Es el contenido real del elemento HTML, como el texto, las imágenes o los videos.</li>
+							<li><u>Relleno (padding):</u> Es el espacio entre el contenido y el borde de la caja. Puedes ajustar el tamaño del relleno utilizando la propiedad "padding".</li>
+							<li><u>Borde (border):</u> Es una línea que rodea el contenido y el relleno de la caja. Puedes ajustar el tamaño, el estilo y el color del borde utilizando la propiedad "border".</li>
+							<li><u>Margen (margin):</u> Es el espacio entre la caja y otros elementos HTML cercanos. Puedes ajustar el tamaño del margen utilizando la propiedad "margin".</li>
+						</ul>
+					<p>En resumen, el modelo de caja de CSS es un sistema que define cómo se organizan y se presentan los elementos HTML en una página web. Al comprender cómo funciona el modelo de caja, puedes controlar con precisión el tamaño, la posición y la apariencia visual de cada elemento HTML en tu página.</p>	
+        </section>
+				<section class="main-section" id="Flexbox">
+					<header>Flexbox</header>
+					<p>CSS Flexbox es un sistema de diseño que se utiliza para crear diseños flexibles y responsivos en páginas web. Con Flexbox, puedes crear diseños en los que los elementos se ajustan automáticamente al tamaño de la pantalla del usuario, sin tener que utilizar medidas rígidas o posicionamiento absoluto.</p>
+					<p>Flexbox funciona mediante la creación de un "contenedor flexible" que envuelve a los elementos HTML que deseas organizar. A continuación, puedes aplicar diferentes propiedades a este contenedor para controlar cómo se organizan y se distribuyen los elementos dentro del mismo.</p>
+					<ol> Algunas de las propiedades más comunes que se utilizan en Flexbox incluyen:
+						<li><u>display: flex</u> - Esta propiedad convierte al contenedor en un contenedor flexible.</li>
+						<li><u>flex-direction</u> - Esta propiedad controla la dirección en la que se organizan los elementos dentro del contenedor, ya sea en filas (horizontal) o en columnas (vertical).</li>
+						<li><u>justify-content</u> - Esta propiedad controla cómo se distribuyen los elementos a lo largo del eje principal del contenedor, ya sea alineándolos a la izquierda, al centro o a la derecha.</li>
+						<li><u>align-items</u> - Esta propiedad controla cómo se alinean los elementos a lo largo del eje secundario del contenedor, ya sea en la parte superior, en el centro o en la parte inferior.</li>
+						<li><u>flex-wrap</u> - Esta propiedad controla si los elementos pueden envolverse a lo largo del eje principal del contenedor o si deben ajustarse automáticamente al ancho del contenedor.</li>
+					</ol>
+					<p>Con Flexbox, puedes crear diseños complejos y responsivos sin tener que preocuparte por la compatibilidad con diferentes tamaños de pantalla o dispositivos. Flexbox es ampliamente utilizado en el diseño web moderno y es una herramienta esencial para cualquier desarrollador web.</p>
+				</section>
+				<section class="main-section" id="Grid">
+					<header>CSS Grid</header>
+					<p>CSS Grid es otro sistema de diseño en CSS que se utiliza para crear diseños flexibles y responsivos en páginas web. Es similar a Flexbox en algunos aspectos, pero ofrece una mayor capacidad para crear diseños complejos y detallados.</p>
+					<p>CSS Grid funciona mediante la creación de una cuadrícula de filas y columnas, que se pueden asignar a los elementos HTML que deseas organizar. Puedes controlar el tamaño y la posición de los elementos utilizando diferentes propiedades, como "grid-template-rows", "grid-template-columns" y "grid-template-areas".</p>
+					<p>Además, CSS Grid también te permite controlar la posición de los elementos dentro de las celdas de la cuadrícula utilizando propiedades como "grid-row-start", "grid-column-end" y "grid-row-end". Esto significa que puedes crear diseños detallados en los que los elementos se ajustan automáticamente al tamaño de la pantalla del usuario, pero también pueden ser posicionados con precisión en la cuadrícula.</p>
+					<ol>Algunas de las propiedades más comunes que se utilizan en CSS Grid incluyen:
+						<li><u>display: grid</u> - Esta propiedad convierte al contenedor en una cuadrícula.</li>
+						<li><u>grid-template-rows / grid-template-columns</u> - Estas propiedades definen el número y el tamaño de las filas y columnas de la cuadrícula.</li>
+						<li><u>grid-template-areas</u> - Esta propiedad permite asignar nombres a las áreas de la cuadrícula, lo que puede ser útil para organizar visualmente los elementos en el diseño.</li>
+						<li><u>grid-row-start / grid-column-start / grid-row-end / grid-column-end</u> - Estas propiedades controlan la posición de los elementos dentro de las celdas de la cuadrícula.</li>
+					</ol>
+					<p>CSS Grid es una herramienta muy útil para el diseño web moderno, especialmente para diseños complejos que requieren una gran cantidad de control sobre la posición y el tamaño de los elementos.</p>
+				</section>
+				<section class="main-section" id="Media_query">
+					<header>Medias Query</header>
+					<p>Las media queries son una característica de CSS que te permiten aplicar estilos diferentes a un elemento en función de las características de la pantalla del usuario, como el ancho de la pantalla, la altura, la orientación, la densidad de píxeles, etc.</p>
+					<p>Las media queries funcionan añadiendo una condición en el CSS que se aplica solo si se cumple cierto criterio. Por ejemplo, puedes crear una media query que aplique ciertos estilos solo si la pantalla del usuario es más pequeña que 768 píxeles de ancho. Esto significa que los estilos se aplicarán solo a dispositivos móviles y no a dispositivos de escritorio.</p>
+					<p>Las media queries se definen utilizando la sintaxis <b>"@media"</b>, seguida de la condición que se debe cumplir. Por ejemplo:</p>
+					<code>@media (max-width: 768px) {/* estilos que se aplican solo en pantallas con un ancho máximo de 768px */ }</code>
+					<p>En este ejemplo, los estilos dentro de la media query solo se aplicarán si la pantalla del usuario tiene un ancho máximo de 768 píxeles.</p>
+					<p>Las media queries son una herramienta muy útil para crear diseños responsivos que se adapten automáticamente a diferentes tamaños de pantalla. Puedes utilizarlas para crear diseños diferentes para dispositivos móviles y de escritorio, o para cambiar el diseño de tu sitio web en función de la orientación de la pantalla del usuario.</p>
+				</section>
+				<section class="main-section" id="Variables">
+					<header>Variables</header>
+					<p>Las variables CSS, también conocidas como variables personalizadas, son una característica de CSS que te permiten definir valores que se pueden reutilizar en todo tu código CSS. Las variables CSS son muy útiles porque te permiten definir valores una vez y luego usarlos en todo tu código, lo que hace que sea más fácil hacer cambios y mantener el código.</p>
+					<p>Las variables CSS se definen utilizando la sintaxis "--nombre-variable", donde "nombre-variable" es el nombre que deseas darle a la variable. Luego, puedes asignar un valor a la variable utilizando la propiedad "var()". Por ejemplo:</p>
+					<code>:root {--color-primario: #007bff; }</code>
+					<code>a { color: var(--color-primario); }</code>
+					<p>En este ejemplo, se define una variable llamada "--color-primario" y se le asigna el valor "#007bff". Luego, en la regla CSS para los enlaces, se utiliza la propiedad "var()" para asignar el valor de la variable a la propiedad "color".</p>
+					<p>Las variables CSS se pueden utilizar para definir cualquier valor CSS, como colores, fuentes, márgenes, etc. También se pueden anidar, lo que significa que puedes utilizar una variable en la definición de otra variable.</p>
+					<p>Las variables CSS son una herramienta muy útil para crear estilos coherentes y escalables en todo tu código CSS. Además, las variables CSS también te permiten cambiar fácilmente los valores de estilo en todo tu código simplemente cambiando el valor de la variable, en lugar de tener que cambiar manualmente cada valor de estilo en tu código.</p>
+				</section>
+				<section class="main-section" id="Pseudo_clases">
+					<header>Pseudoclases</header>
+					<p>Las pseudoclases CSS son selectores que se utilizan para seleccionar elementos en función de su estado o relación con otros elementos. Las pseudoclases se agregan al selector de un elemento para seleccionar un estado específico del elemento o para aplicar un estilo a un elemento en función de su relación con otro elemento.</p>
+					<ul>Algunos ejemplos de pseudoclases CSS son:
+						<li><u>:hover:</u> se aplica cuando el cursor se sitúa sobre un elemento.</li>
+						<li><u>:active:</u> se aplica cuando se hace clic en un elemento.</li>
+						<li><u>:focus:</u> se aplica cuando un elemento tiene el foco (se ha seleccionado o se está interactuando con él).</li>
+						<li><u>:first-child:</u> se aplica al primer hijo de un elemento.</li>
+						<li><u>:last-child:</u> se aplica al último hijo de un elemento.</li>
+						<p>Para utilizar una pseudoclase en un selector de CSS, simplemente se agrega el nombre de la pseudoclase después del selector. Por ejemplo:</p>
+						<code>a:hover { color: red; }</code>
+						<p>En este ejemplo, se seleccionan todos los elementos "a" y se aplica un estilo de color rojo cuando el usuario pasa el cursor sobre ellos.</p>
+						<p>Las pseudoclases CSS son una herramienta muy útil para agregar interactividad y estilos específicos a elementos en función de su estado o relación con otros elementos en una página web.</p>
+					</ul>
+				</section>
+				<section class="main-section" id="Pseudo_elementos">
+					<header>Pseudoelementos</header>
+					<p>Los pseudoelementos CSS son selectores que se utilizan para agregar contenido adicional a un elemento sin tener que modificar el HTML. Los pseudoelementos se agregan al selector de un elemento para seleccionar una parte específica del elemento y aplicar un estilo a esa parte.</p>
+					<ul> Los pseudoelementos CSS más comunes son:
+						<li><u>::before:</u> se utiliza para agregar contenido antes del contenido del elemento seleccionado.</li>
+						<li><u>::after:</u> se utiliza para agregar contenido después del contenido del elemento seleccionado.</li>
+						<li><u>::first-letter:</u> se utiliza para aplicar un estilo al primer carácter de un elemento.</li>
+						<li><u>::first-line:</u> se utiliza para aplicar un estilo a la primera línea de un elemento.</li>
+					</ul>
+					<p>Para utilizar un pseudoelemento en un selector de CSS, se agrega el nombre del pseudoelemento después del selector y se utiliza la sintaxis de doble dos puntos (::). Por ejemplo:</p>
+					<code>p::before { content: "Antes del párrafo"; font-weight: bold; }</code>
+					<p>En este ejemplo, se seleccionan todos los elementos "p" y se agrega contenido antes del contenido del párrafo con un estilo de negrita.</p>
+					<p>Los pseudoelementos CSS son una herramienta muy útil para agregar contenido adicional y estilos específicos a partes de un elemento sin tener que modificar el HTML.</p>
+				</section>
+				<section class="main-section" id="Referencia">
+					<header>Refencia</header>
+					<p>Toda la documentación en esta página está tomada de <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN</a>.</p>
+				</section>
+    </main>
+</body>
+</html>
